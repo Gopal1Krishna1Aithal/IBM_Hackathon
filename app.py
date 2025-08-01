@@ -506,7 +506,7 @@ with st.sidebar:
     )
 
     selected_ward_gdf = None
-    if selected_ward_name != "--- Bangalore City Overview ---":
+    if selected_ward_name != " Bangalore City ":
         selected_ward_gdf = bbmp_wards[bbmp_wards['KGISWardName'] == selected_ward_name].copy()
         if not selected_ward_gdf.empty:
             display_properties = selected_ward_gdf.iloc[0].to_dict()
@@ -936,7 +936,7 @@ with tab2: # Ward Comparison
 
 
 with tab3: # Incident Breakdown
-    st.markdown("<h3 style='color: #00C0FF;'>⚠️ Global Incident Breakdown by Ward</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='color: #00C0FF;'>⚠️ Incident Breakdown by Ward</h3>", unsafe_allow_html=True)
     st.markdown("<p style='font-size: 0.95em; color: #E0E0E0;'>Analyze the distribution of historical flood incidents across different wards.</p>", unsafe_allow_html=True)
 
     if not all_flood_points_gdf.empty and 'WARD_NAME' in all_flood_points_gdf.columns:
