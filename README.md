@@ -28,17 +28,17 @@ Frontend: StreamlitGeospatial Processing: GeoPandas, ShapelyMapping: Folium, str
 
 📂 Project Structure
 
-haurcc/
-├─ app.py
-├─ requirements.txt
-├─ data/
-│  ├─ bbmp-wards.geojson
-│  ├─ bangalore_swd_primary.geojson
-│  ├─ bbmp_floodprone_locations.geojson
-│  ├─ flooding_vulnerable_locations.geojson
-│  ├─ bbmp_lowlying_areas.geojson
-│  └─ bangalore-rainfall-data-1900-2024-sept.csv
-└─ README.md
+    haurcc/
+    ├─ app.py
+    ├─ requirements.txt
+    ├─ data/
+    │  ├─ bbmp-wards.geojson
+    │  ├─ bangalore_swd_primary.geojson
+    │  ├─ bbmp_floodprone_locations.geojson
+    │  ├─ flooding_vulnerable_locations.geojson
+    │  ├─ bbmp_lowlying_areas.geojson
+    │  └─ bangalore-rainfall-data-1900-2024-sept.csv
+    └─ README.md
 
 ⚙️ Installation
 
@@ -50,31 +50,31 @@ pip install -r requirements.txt
 
 requirements.txt
 
-streamlit
-geopandas
-folium
-streamlit-folium
-numpy
-pandas
-altair
-shapely
-branca
+    streamlit
+    geopandas
+    folium
+    streamlit-folium
+    numpy
+    pandas
+    altair
+    shapely
+    branca
 
 📊 Data Requirements
 
 Place in data/:
 
-bbmp-wards.geojson
+    bbmp-wards.geojson
 
-bangalore_swd_primary.geojson
+    bangalore_swd_primary.geojson
 
-bbmp_floodprone_locations.geojson
+    bbmp_floodprone_locations.geojson
 
-flooding_vulnerable_locations.geojson
+    flooding_vulnerable_locations.geojson
 
-bbmp_lowlying_areas.geojson
+    bbmp_lowlying_areas.geojson
 
-bangalore-rainfall-data-1900-2024-sept.csv
+    bangalore-rainfall-data-1900-2024-sept.csv
 
 ▶️ Running the App
 
@@ -95,9 +95,5 @@ Improve resilience index methodology.
 Add CRS auto-detection and reprojection.
 
 Optimize large GeoJSON handling.
-
-📜 License
-
-Specify license here (e.g., MIT).
 
 Version: v2.0
